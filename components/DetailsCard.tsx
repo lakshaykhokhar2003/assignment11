@@ -5,11 +5,14 @@ import {Card, CardContent} from "@/components/ui/card";
 
 const DetailsCard = ({values}:{values:detailsCardProps[]}) => {
     return (
-        <div className="w-full flex flex-row justify-between my-4">
+        <div className="w-full flex flex-wrap gap-4 justify-start pr-4 sm:pr-8 md:pr-10 lg:pr-15 xl:pr-20 my-4">
             {values.map((detail, index) => (
-                <Card key={index} className="pr-4 sm:pr-8 md:pr-10 md:bg-none lg:pr-15 xl:pr-20">
-                    <CardContent>
-                        <div key={index} className="bg-white flex items-center justify-items-start gap-4">
+                <Card
+                    key={index}
+                    className="min-w-[220px] flex-1 sm:flex-none sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)]"
+                >
+                    <CardContent className="p-4">
+                        <div className="bg-white flex items-center gap-4">
                             <div className={`${detail.iconClassName} p-2 rounded-md text-white`}>
                                 {detail.icon}
                             </div>
@@ -24,7 +27,9 @@ const DetailsCard = ({values}:{values:detailsCardProps[]}) => {
         </div>
     )
 }
+
 export default DetailsCard
+
 
 export const cardValues: detailsCardProps[] = [{
     iconClassName: "bg-blue-500",
