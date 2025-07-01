@@ -6,7 +6,7 @@ import {dateConverter} from "@/lib/utils";
 
 const Projects = ({values}: { values: projectCardProps[] }) => {
     return (
-        <div className="container max-w-[60%] w-full ">
+        <div className="container max-w-full lg:max-w-[60%]">
             <h1 className="text-xl bg-white font-semibold text-gray-900 w-full p-6 px-8 border rounded-lg">Recent Projects</h1>
             <div className="bg-white flex flex-col gap-4 p-6 px-8 border rounded-lg">
                 {values.map((detail, index) => (
