@@ -9,7 +9,7 @@ const Activity = ({values}:{values:activityProps[]}) => {
         <h1 className="text-xl font-semibold text-gray-900 w-full p-6 px-8 border rounded-lg">Recent Projects</h1>
             <div className="p-3 flex flex-col items-center justify-between border rounded-lg">
                 {values.map((detail, index) => (
-                    <div key={index} className="flex p-3 items-center gap-3 w-full ">
+                    <div key={index} className="flex p-3 items-center gap-3 w-full cursor-pointer">
                         <Avatar>
                             <AvatarImage src="" className="" />
                             <AvatarFallback className={`${detail.avatarClassName} text-white tracking-normal text-sm`}>{avatarNameConverter(detail.name)}</AvatarFallback>

@@ -10,7 +10,7 @@ const Projects = ({values}: { values: projectCardProps[] }) => {
             <h1 className="text-xl bg-white font-semibold text-gray-900 w-full p-6 px-8 border rounded-lg">Recent Projects</h1>
             <div className="bg-white flex flex-col gap-4 p-6 px-8 border rounded-lg">
                 {values.map((detail, index) => (
-                    <div key={index} className="bg-gray-50 rounded-md p-3 flex items-center justify-between">
+                    <div key={index} className="bg-gray-50 rounded-md p-3 flex items-center justify-between cursor-pointer">
                         <div className="flex flex-row items-center justify-center gap-4">
                             <div className={`${detail.iconClassName} p-2 rounded-md`}>
                                 {detail.icon}

@@ -8,7 +8,7 @@ const Actions = ({values}: { values: actionsProps[] }) => {
             <h1 className="text-xl font-semibold text-gray-900 w-full p-6 px-8 border rounded-lg">Quick Actions</h1>
             <div className="p-3 flex flex-col items-center justify-between border rounded-lg gap-3">
                 {values.map((detail, index) => (
-                    <div key={index} className={`${detail.backgroundClass} flex p-4 items-center gap-3 w-full rounded-md`}>
+                    <div key={index} className={`${detail.backgroundClass} flex p-4 items-center gap-3 w-full rounded-md cursor-pointer`}>
                         <div className={`p-2 rounded-md text-white ${detail.iconClassName}`}>
                         {detail.icon}
                         </div>
