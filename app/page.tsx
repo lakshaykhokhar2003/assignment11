@@ -18,7 +18,7 @@ export default function Home() {
                 <DetailsCard values={cardValues}/>
                 <div className="my-4 flex flex-row justify-between">
                     <Projects values={projectValues}/>
-                    <div className="my-4 flex flex-col justify-between max-w-1/3 w-full gap-5">
+                    <div className="flex flex-col justify-between max-w-1/3 w-full gap-5">
                         <Activity values={ActivityValues}/>
                         <Actions values={ActionValues}/>
                     </div>
